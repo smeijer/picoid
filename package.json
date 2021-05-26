@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Nanoid configured to behave like Meteor Random.id",
   "author": "Stephan Meijer <stephan@meijer.ws>",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "bugs": {
     "url": "https://github.com/smeijer/picoid/issues"
   },
@@ -13,11 +15,21 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ncc build src/index.ts -o lib",
+    "bump:patch": "npm version patch -m 'release: cut the %s release'",
+    "bump:minor": "npm version minor -m 'release: cut the %s release'",
+    "bump:major": "npm version major -m 'release: cut the %s release'"
   },
-  "author": "",
+  "files": [
+
+  ],
   "license": "ISC",
   "dependencies": {
     "nanoid": "^1.3.3"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.28.6",
+    "typescript": "^4.2.4"
   }
 }
