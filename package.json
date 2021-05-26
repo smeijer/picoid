@@ -20,7 +20,7 @@
     "bump:minor": "npm version minor -m 'release: cut the %s release'",
     "bump:major": "npm version major -m 'release: cut the %s release'"
   },
-  "files": [],
+  "files": ["lib"],
   "license": "ISC",
   "dependencies": {
     "nanoid": "^1.3.3"
