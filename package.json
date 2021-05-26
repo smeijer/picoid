@@ -1,6 +1,6 @@
 {
   "name": "picoid",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Nanoid configured to behave like Meteor Random.id",
   "author": "Stephan Meijer <stephan@meijer.ws>",
   "main": "index.js",
@@ -20,7 +20,9 @@
     "bump:minor": "npm version minor -m 'release: cut the %s release'",
     "bump:major": "npm version major -m 'release: cut the %s release'"
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "license": "ISC",
   "dependencies": {
     "nanoid": "^1.3.3"
