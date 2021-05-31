@@ -15,7 +15,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "ncc build src/index.ts -o lib",
+    "build": "rimraf ./lib *.tsbuildinfo && tsc",
+    "prepare": "npm run build",
     "bump:patch": "npm version patch -m 'release: cut the %s release'",
     "bump:minor": "npm version minor -m 'release: cut the %s release'",
     "bump:major": "npm version major -m 'release: cut the %s release'"
@@ -28,7 +29,7 @@
     "nanoid": "^1.3.3"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.28.6",
+    "rimraf": "^3.0.2",
     "typescript": "^4.2.4"
   }
 }
