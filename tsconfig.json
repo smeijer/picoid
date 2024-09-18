@@ -1,20 +1,17 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "rootDir": "./src",
-    "outDir": "./lib",
-    "target": "ES2019",
-    "module": "CommonJS",
-    "moduleResolution": "node",
-    "isolatedModules": true,
-    "strict": true,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "noImplicitAny": false,
     "declaration": true,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "inlineSources": true,
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "noUncheckedIndexedAccess": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
     "sourceMap": true,
-    "jsx": "react-jsx",
-  },
-  "include": ["./src"],
-  "exclude": ["node_modules", "**/__tests__/**", "**/__mocks__/**"]
+    "strict": true,
+    "target": "es2022"
+  }
 }
